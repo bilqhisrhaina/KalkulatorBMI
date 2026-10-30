@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane
+    xmlns="http://javafx.com/javafx/21"
+    xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="controller.KalkuBmiController"
+    prefWidth="360.0"
+    prefHeight="640.0"
+    minWidth="360.0"
+    minHeight="640.0"
+    style="-fx-background-color: #FFF8F1;">
+
+    <children>
+        <VBox
+            alignment="CENTER"
+            maxWidth="320.0"
+            prefWidth="320.0"
+            spacing="10.0"
+            style="-fx-background-color: white;
+                   -fx-background-radius: 22;
+                   -fx-border-color: #F4D1B1;
+                   -fx-border-width: 2;
+                   -fx-border-radius: 22;
+                   -fx-padding: 22 18 20 18;">
+
+            <children>
+                <Label
+                    text="KALKULATOR BMI"
+                    style="-fx-text-fill: #E58A32;
+                           -fx-font-size: 25px;
+                           -fx-font-weight: bold;"/>
+
+                <Label
+                    text="Hitung indeks massa tubuh Anda"
+                    style="-fx-text-fill: #777777;
+                           -fx-font-size: 13px;"/>
+
+                <Label
+                    text="Jenis Kelamin"
+                    style="-fx-font-size: 14px;
+                           -fx-font-weight: bold;"/>
+
+                <ComboBox
+                    fx:id="cmbJenisKelamin"
+                    maxWidth="280.0"
+                    prefWidth="280.0"
+                    prefHeight="40.0"
+                    promptText="Pilih jenis kelamin"
+                    style="-fx-background-color: white;
+                           -fx-border-color: #E8CBAF;
+                           -fx-border-radius: 10;
+                           -fx-background-radius: 10;
+                           -fx-font-size: 13px;"/>
+
+                <Label
+                    text="Berat Badan (kg)"
+                    style="-fx-font-size: 14px;
+                           -fx-font-weight: bold;"/>
+
+                <TextField
+                    fx:id="txtBerat"
+                    prefWidth="280.0"
+                    prefHeight="40.0"
+                    promptText="Masukkan berat badan (kg)"
+                    style="-fx-background-color: white;
+                           -fx-border-color: #E8CBAF;
+                           -fx-border-radius: 10;
+                           -fx-background-radius: 10;
+                           -fx-padding: 9;
+                           -fx-font-size: 13px;"/>
+
+                <Label
+                    text="Tinggi Badan (cm)"
+                    style="-fx-font-size: 14px;
+                           -fx-font-weight: bold;"/>
+
+                <TextField
+                    fx:id="txtTinggi"
+                    prefWidth="280.0"
+                    prefHeight="40.0"
+                    promptText="Masukkan tinggi badan (cm)"
+                    style="-fx-background-color: white;
+                           -fx-border-color: #E8CBAF;
+                           -fx-border-radius: 10;
+                           -fx-background-radius: 10;
+                           -fx-padding: 9;
+                           -fx-font-size: 13px;"/>
+
+                <HBox alignment="CENTER" spacing="10.0">
+                    <children>
+                        <Button
+                            text="Hitung BMI"
+                            onAction="#hitungBMI"
+                            prefWidth="145.0"
+                            prefHeight="42.0"
+                            style="-fx-background-color: #E58A32;
+                                   -fx-text-fill: white;
+                                   -fx-font-size: 14px;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 10;
+                                   -fx-cursor: hand;"/>
+
+                        <Button
+                            text="Reset"
+                            onAction="#resetForm"
+                            prefWidth="95.0"
+                            prefHeight="42.0"
+                            style="-fx-background-color: #F1E5D9;
+                                   -fx-text-fill: #59351F;
+                                   -fx-font-size: 14px;
+                                   -fx-font-weight: bold;
+                                   -fx-background-radius: 10;
+                                   -fx-cursor: hand;"/>
+                    </children>
+                </HBox>
+
+                <Label
+                    fx:id="lblHasil"
+                    text="Hasil BMI akan tampil di sini."
+                    alignment="CENTER"
+                    textAlignment="CENTER"
+                    wrapText="true"
+                    prefWidth="280.0"
+                    minHeight="78.0"
+                    style="-fx-background-color: #FFF0E1;
+                           -fx-background-radius: 14;
+                           -fx-padding: 15;
+                           -fx-font-size: 14px;
+                           -fx-font-weight: bold;
+                           -fx-text-fill: #59351F;"/>
+
+                <Label
+                    text="Kategori BMI ini merupakan acuan umum untuk orang dewasa."
+                    wrapText="true"
+                    maxWidth="280.0"
+                    style="-fx-text-fill: #888888;
+                           -fx-font-size: 11px;"/>
+            </children>
+        </VBox>
+    </children>
+</StackPane>
