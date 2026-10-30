@@ -15,6 +15,8 @@ Project ini menggunakan desain antarmuka minimalis dengan tema warna oranye dan 
 - Validasi input agar data yang dimasukkan sesuai.
 
 ## 🖥️ Tampilan Aplikasi
+<img width="269" height="495" alt="Screenshot 2026-10-30 152509" src="https://github.com/user-attachments/assets/14b28a51-850d-4572-84d7-3029181b5d35" />
+
 
 Aplikasi dirancang dengan konsep mobile portrait, tampilan sederhana, dan penggunaan warna yang nyaman dilihat.
 
